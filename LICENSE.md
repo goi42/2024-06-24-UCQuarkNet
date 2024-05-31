@@ -77,6 +77,13 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 "The Carpentries", "Software Carpentry" and "Data Carpentry" and their respective logos are
 registered trademarks of [Community Initiatives][CI].
 
+## Qualifications
+
+This license accurately describes the content of this website specifically and of any
+official Software Carpentry, Data Carpentry, or Library Carpentry material that it links
+to. It does not necessarily describe the licenses of the other software or instructional
+material that this website links to.
+
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [mit-license]: https://opensource.org/licenses/mit-license.html
