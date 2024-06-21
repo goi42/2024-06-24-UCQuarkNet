@@ -83,7 +83,9 @@ You should see a message including something like
 Open a browser on the local machine and type in one of these URLs. You should be taken
 to a page that looks like this:
 
-![Jupyter landing page](/fig/Jupyter_landing.png)
+<figure>
+<img src="{{site.baseurl}}/fig/Jupyter_landing.png" title="The Jupyter landing page you should see when you first run it. You may or may not see some files in the browser, depending on what you have saved in the directory from which you launched the notebook."/>
+</figure>
 
 If this is not what you see, ask the instructor for help.
 
