@@ -150,7 +150,11 @@ It looks like the $\chi^2_{\text{red}}$ value does have a minimum between $m=1$ 
 <img src="{{site.baseurl}}/fig/linear_data_chi2_parabola.png" title="The $\chi^2$ values for our three guesses of $m$ with a parabola drawn through them."/>
 </figure>
 
-We then calculate the minimum of the parabola to be at $m=m_0=2.03$. If we calculate the reduced $\chi^2$ value for this guess, we find $\chi^2_{\text{red}}(m=2.03,b=1) = 0.52$, which is slightly better than our previous best guess, $\chi^2_{\text{red}}(m=2,b=1) = 0.56$. We have now minimized our $\chi^2$ as a function of $m$.
+We then calculate the minimum of the parabola to be at $m=m_0=2.03$. If we calculate the reduced $\chi^2$ value for this guess, we find $\chi^2_{\text{red}}(m=2.03,b=1) = 0.52$, which is slightly better than our previous best guess, $\chi^2_{\text{red}}(m=2,b=1) = 0.56$. We have now minimized our $\chi^2$ as a function of $m$:
+
+<figure>
+<img src="{{site.baseurl}}/fig/linear_data_fit_comparison.png" title="Data and the best fit (along with the previous best)."/>
+</figure>
 
 How confident are we that this is the best value of $m$? We can calculate an error for our minimized value based on the width of the parabola, which we determine by finding the value of $m$ at $\text{min}(\chi^2) + 1$ and taking the absolute difference between this value and $m_0$:
 
@@ -158,7 +162,12 @@ How confident are we that this is the best value of $m$? We can calculate an err
 <img src="{{site.baseurl}}/fig/linear_data_chi2_parabola_width.png" title="The $\chi^2$ values for our three guesses of $m$ with a parabola drawn through them and the minimized value of $m$, along with its error."/>
 </figure>
 
-In our case, we find $m=2.03 \pm 0.05$.
+In our case, we find $m=2.03 \pm 0.05$:
+
+<figure>
+<img src="{{site.baseurl}}/fig/linear_data_fit_comparison_with_error.png" title="Data and the best fit (along with the previous best), shown with error bands."/>
+</figure>
+
 
 ## What is `iminuit`?
 
