@@ -168,6 +168,16 @@ In our case, we find $m=2.03 \pm 0.05$:
 <img src="{{site.baseurl}}/fig/linear_data_fit_comparison_with_error.png" title="Data and the best fit (along with the previous best), shown with error bands."/>
 </figure>
 
+## Choosing trial parameters
+
+In the above example, we chose $m=1$, $m=2$, and $m=3$ as our trial values based on how our model appeared to align with the data in the plot. This was fine for our simple example here, but for more complicated models, we would want to define an algorithmic way of determining which parameter values to guess.
+
+One such algorithm is called "gradient descent", which involves taking the derivative of the $\chi^2$ function with respect to the parameters to be minimized and adjusting them in the direction of smaller $\chi^2$ values. Another algorithm is called "Newton's method", which involves adjusting parameter values based on second-derivatives. A discussion of these algorithms is beyond the scope of this episode, but they will be used behind the scenes when we start with the `iminuit` package below.
+
+## Is this really the minimum?
+
+We have certainly found *a* minimum for $\chi^2(m)$, but is it *the* minimum? How can we be sure there is not another, lower value of the $\chi^2$ somewhere else that we did not check? Well, for simple minimization problems with analytical solutions, like the one above, we could have solved for the minimum explicitly, but for more complicated models, this may not be possible. In these cases, we *won't* be sure that we have really found the absolute "global" minimum, only that we have found a "local" one (or something close to it)---the only way to be really sure would be to check every possible value for the parameters, which we can't do with finite computing resources. It is therefore important to start our minimization from a reasonable location by choosing appropriate guesses for our parameters; this helps give us confidence that we have arrived at an appropriate solution.
+
 
 ## What is `iminuit`?
 
